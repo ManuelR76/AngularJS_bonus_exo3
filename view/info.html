@@ -1,0 +1,10 @@
+<ul ng-repeat="information in formsArray" ng-if="$index==id">
+  <li>Nom : {{information.name}}</li>
+  <li>Email : {{information.email}}</li>
+  <li>Sujet : {{information.subject}}</li>
+  <li>Texte : {{information.textsubject}}</li>
+</ul>
+<a href="#!/">Retour</a>
+
+<!--on repéte le tableau, seulement si l'index du tableau correspond à l'id défini par rapport au routeParams dans le js
+donc si l'url indique 1 à la fin, on va chercher la ligne du tableau correspondant à l'index 1-->
